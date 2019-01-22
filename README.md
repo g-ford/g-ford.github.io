@@ -1,4 +1,4 @@
-<h1 style="display: flex; align-items: center">
+<h1>
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60"/>
   </a>
