@@ -1,6 +1,6 @@
-<h1>
+<h1 style="display: flexbox; align-items: center">
   <a href="https://www.gatsbyjs.org">
-    <img style="vertical-align:middle" alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60"/>
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60"/>
   </a>
   Built with Gatsby
 </h1>
