@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Bio from '../components/bio';
 import Post from '../components/post';
 import media from '../utils/media';
 
