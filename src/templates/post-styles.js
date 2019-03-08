@@ -46,6 +46,82 @@ export const Container = styled.article`
     height: 1rem;
     padding: 0;
   }
+
+  .gatsby-highlight pre {
+    display: block;
+    position: relative;
+    padding: 20px 0 0;
+    background: #193549;
+    color: #dcdcdc;
+    border-radius: 5px;
+    overflow-y: hidden;
+  }
+  .gatsby-highlight pre:before {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff5f56;
+    border-radius: 50%;
+    content: '';
+  }
+  .gatsby-highlight pre:after {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    width: 10px;
+    height: 10px;
+    background-color: #ffbd2e;
+    border-radius: 50%;
+    content: '';
+  }
+  .gatsby-highlight pre code:before {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    width: 10px;
+    height: 10px;
+    background-color: #27c93f;
+    border-radius: 50%;
+    content: '';
+  }
+  .gatsby-highlight pre code {
+    background: none;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    overflow: inherit;
+    padding: 1.58333rem;
+    white-space: inherit;
+    word-wrap: normal;
+    font-family: Inconsolata, monospace;
+  }
+  .gatsby-highlight code {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -hp-pre-wrap;
+    word-wrap: break-word;
+    background: transparent;
+    color: #3b9cff;
+    display: inline;
+    font-family: D2Coding, 'D2 coding', monospace, serif;
+    max-width: 100%;
+    overflow: auto;
+    padding: 0 0.1625rem;
+  }
+  .gatsby-highlight pre code {
+    color: #dcdcdc;
+  }
 `;
 
 export const Header = styled.header`
