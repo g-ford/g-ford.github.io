@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Stuff I write`,
-    description: `A Blog`,
+    title: `I wrote this`,
+    description: `Everything but nothing important`,
     author: `Geoff Ford`,
     authorTagline: '',
-    social: {
-    },
+    social: {},
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -60,7 +59,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gford-blog`,
+        name: `Geoff's Blog`,
         short_name: `blog`,
         start_url: `/`,
         background_color: `#663399`,

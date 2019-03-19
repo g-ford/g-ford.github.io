@@ -6,11 +6,12 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve(`./src/templates/blog-post.js`);
+    const tagTemplate = path.resolve(`./src/templates/tag.js`);
     resolve(
       graphql(
         `
           {
-            allMarkdownRemark(
+            posts: allMarkdownRemark(
               sort: { fields: [frontmatter___date], order: DESC }
               limit: 1000
             ) {
@@ -25,6 +26,14 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+            tags: allMarkdownRemark(
+              sort: { order: DESC, fields: [frontmatter___date] }
+              limit: 1000
+            ) {
+              group(field: frontmatter___tags) {
+                fieldValue
+              }
+            }
           }
         `
       ).then(result => {
@@ -34,7 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = result.data.posts.edges;
 
         posts.forEach((post, index) => {
           const previous =
@@ -48,6 +57,19 @@ exports.createPages = ({ graphql, actions }) => {
               slug: post.node.fields.slug,
               previous,
               next,
+            },
+          });
+        });
+
+        const tagNames = result.data.tags.group;
+        // Make tag pages
+        tagNames.forEach(tag => {
+          const tagName = tag.fieldValue;
+          createPage({
+            path: `/tags/${tagName}/`,
+            component: tagTemplate,
+            context: {
+              tag: tagName,
             },
           });
         });

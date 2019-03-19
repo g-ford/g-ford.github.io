@@ -2,6 +2,27 @@ import styled from 'styled-components';
 
 import media from '../utils/media';
 
+export const Tags = styled.ul`
+  list-style: none;
+  margin: 0 -5px;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin: 0.625rem 0.3125rem;
+
+    a {
+      background: #ebebeb;
+      text-decoration: none;
+      border: 0;
+      border-radius: 0.1875rem;
+      color: #555;
+      line-height: 1.625;
+      padding: 0.5rem 1rem;
+    }
+  }
+`;
+
 export const Container = styled.article`
   margin-top: 8rem;
 

@@ -3,15 +3,34 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { Container, Title, LinkList, Header } from './post-styles';
+import { Container, Title, LinkList, Header, Tags } from './post-styles';
 import Share from '../components/share';
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
+    const tags = post.frontmatter.tags;
     const siteTitle = this.props.data.site.siteMetadata.title;
     const author = this.props.data.site.siteMetadata.author;
     const { previous, next } = this.props.pageContext;
+
+    const tagsBlock = (
+      <div className="post-single__tags">
+        <Tags>
+          {tags &&
+            tags.map((tag, i) => (
+              <li className="post-single__tags-list-item" key={tag}>
+                <Link
+                  to={'/tags/' + tag}
+                  className="post-single__tags-list-item-link"
+                >
+                  {post.frontmatter.tags[i]}
+                </Link>
+              </li>
+            ))}
+        </Tags>
+      </div>
+    );
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -28,6 +47,7 @@ class BlogPostTemplate extends React.Component {
               <span>&nbsp; - &nbsp;</span>
               <span>{post.fields.readingTime.text}</span>
             </sub>
+            {tagsBlock}
           </Header>
           <div
             css={`
@@ -74,7 +94,10 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(
+      fields: { slug: { eq: $slug } }
+      frontmatter: { published: { eq: true } }
+    ) {
       id
       excerpt
       html
@@ -86,6 +109,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
       }
     }
   }
