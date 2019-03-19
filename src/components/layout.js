@@ -46,7 +46,7 @@ const GlobalStyles = createGlobalStyle`
   h4 {
     font-size: 1.6rem;
   }
-  
+
   code {
     font-family: Menlo,Monaco,"Courier New",Courier,monospace;
     word-break: break-word;
