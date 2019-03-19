@@ -9,7 +9,7 @@ import Share from '../components/share';
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
-    const tags = post.frontmatter.tags;
+    const tags = this.props.data.markdownRemark.frontmatter.tags;
     const siteTitle = this.props.data.site.siteMetadata.title;
     const author = this.props.data.site.siteMetadata.author;
     const { previous, next } = this.props.pageContext;
