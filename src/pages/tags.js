@@ -48,7 +48,6 @@ export const pageQuery = graphql`
     tags: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 1000
-      filter: { frontmatter: { published: { eq: true } } }
     ) {
       group(field: frontmatter___tags) {
         fieldValue

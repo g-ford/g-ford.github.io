@@ -1,10 +1,7 @@
 ---
 title: 'dotnet in a Serverless world'
 date: '2019-03-08T22:12:03.284Z'
-category: 'test'
-published: true
 tags: ['dotnet', 'serverless', 'aws']
-something: 'else'
 ---
 
 Serverless development is becoming a pretty common pattern now-a-days. There are some nice libraries and frameworks popping up and the aptlay named

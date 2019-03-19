@@ -1,4 +1,4 @@
-module.exports = {
+const cfg = {
   siteMetadata: {
     title: `I wrote this`,
     description: `Everything but nothing important`,
@@ -71,3 +71,16 @@ module.exports = {
     'gatsby-plugin-offline',
   ],
 };
+
+if (process.env.CONTEXT !== 'production') {
+  const draftsCfg = {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `drafts`,
+      path: `${__dirname}/src/drafts`,
+    },
+  };
+  cfg.plugins.push(draftsCfg);
+}
+
+module.exports = cfg;

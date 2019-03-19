@@ -94,10 +94,7 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(
-      fields: { slug: { eq: $slug } }
-      frontmatter: { published: { eq: true } }
-    ) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt
       html

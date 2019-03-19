@@ -7,12 +7,12 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve(`./src/templates/blog-post.js`);
     const tagTemplate = path.resolve(`./src/templates/tag.js`);
+
     resolve(
       graphql(
         `
           {
             posts: allMarkdownRemark(
-              filter: { frontmatter: { published: { eq: true } } }
               sort: { fields: [frontmatter___date], order: DESC }
               limit: 1000
             ) {
