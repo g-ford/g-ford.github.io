@@ -1,6 +1,6 @@
 const cfg = {
   siteMetadata: {
-    title: `I wrote this`,
+    title: `Geoff wrote this`,
     description: `Everything but nothing important`,
     author: `Geoff Ford`,
     authorTagline: '',
