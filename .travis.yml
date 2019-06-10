@@ -3,17 +3,19 @@ node_js:
   - "stable"
 cache: yarn
 
-install: yarn
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  local_dir: public
+  target_branch: master
+  keep-history: true
+  on:
+    branch: lumen
 
-# deploy:
-#   provider: pages
-#   skip-cleanup: true
-#   github-token: $GITHUB_TOKEN
-#   local_dir: public
-#   keep-history: true
-#   on:
-#     branch: master
-
+before_script:
+  - "npm i -g gatsby"
+  - "npm i"
 
 script:
   - "gatsby build"
