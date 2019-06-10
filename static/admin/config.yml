@@ -10,7 +10,7 @@ collections:
   - name: articles
     label: Articles
     folder: src/pages/articles
-    #slug: "{{year}}-{{month}}-{{day}}---{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}---{{slug}}"
     create: true
     fields:
       - { name: title, label: Title }
