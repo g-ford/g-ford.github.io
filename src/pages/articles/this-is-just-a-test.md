@@ -6,10 +6,12 @@ title: This is just a test
 asdfasdf asdf asdf asdf asdf
 
 ## and somehting eles
+
 asdf
 asdf
 as
 
+![](/assets/0.jpg)
 
 ```python
 asdfasdf
