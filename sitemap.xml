@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://g-ford.github.io/posts/encryption-at-rest-aws/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/tags/aws/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/tags/security/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/categories/programming/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/posts/apis-vs-microservices/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/tags/apis/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/tags/microservices/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/posts/dotnet-in-a-serverless-world/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/tags/dotnet/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/tags/serverless/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/contact</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/posts/python-meta-programming-with-apis/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/tags/python/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/tags/metaprogramming/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/posts/isomorphic-react-from-scratch/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/tags/react/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/tags/javascript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/categories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://g-ford.github.io/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>

@@ -1,1 +1,0 @@
-{"data":{"tag":{"totalCount":2,"edges":[{"node":{"fields":{"slug":"/testing-tags/"},"frontmatter":{"title":"Testing tags"}}},{"node":{"fields":{"slug":"/dotnet-serverless/"},"frontmatter":{"title":"dotnet in a Serverless world"}}}]}},"pageContext":{"tag":"dotnet"}}
