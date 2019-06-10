@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: g-ford/g-ford.github.io
-  branch: cms
+  branch: lumens
 
 media_folder: static/assets
 public_folder: assets
@@ -19,4 +19,5 @@ collections:
       - { name: category, label: Category, default: programming }
       - { name: tags, label: Tags, widget: list }
       - { name: layout, label: Layout, widget: hidden, default: post }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true}
       - { name: body, label: Body, widget: markdown }
