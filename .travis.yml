@@ -1,7 +1,10 @@
 language: node_js
 node_js:
   - "stable"
-cache: yarn
+cache:
+  directories:
+    - ~/.npm
+    - node_modules
 
 deploy:
   provider: pages
@@ -14,8 +17,8 @@ deploy:
     branch: lumen
 
 before_script:
-  - "npm i -g gatsby"
-  - "npm i"
+  - "npm i -g gatsby-cli"
+  - "yarn"
 
 script:
-  - "gatsby build"
+  - gatsby build
