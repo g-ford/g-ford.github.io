@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: g-ford/g-ford.github.io
-  branch: lumens
+  branch: lumen
 
 media_folder: static/assets
 public_folder: assets
