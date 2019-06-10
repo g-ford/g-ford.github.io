@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: g-ford/g-ford.github.io
+  branch: cms
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: articles
+    label: Articles
+    folder: src/pages/articles
+    slug: "{{year}}-{{month}}-{{day}}---{{slug}}"
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
