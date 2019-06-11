@@ -1,5 +1,5 @@
 ---
-title: "About me"
+title: "About Geoff Ford"
 layout: page
 path: "/about"
 ---
