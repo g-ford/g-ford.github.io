@@ -6,6 +6,8 @@ backend:
 media_folder: static/assets
 public_folder: assets
 
+publish_mode: editorial_workflow
+
 collections:
   - name: articles
     label: Articles
@@ -20,4 +22,14 @@ collections:
       - { name: tags, label: Tags, widget: list }
       - { name: layout, label: Layout, widget: hidden, default: post }
       - { label: "Draft", name: "draft", widget: "boolean", default: true}
+      - { name: body, label: Body, widget: markdown }
+
+  - name: pages
+    label: Pages
+    folder: src/pages/pages
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: path, label: Path, default: "/posts/" }
+      - { name: layout, label: Layout, widget: hidden, default: page }
       - { name: body, label: Body, widget: markdown }
