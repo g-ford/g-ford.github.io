@@ -23,8 +23,9 @@ Try to close these using the `Close All` option in the tab context menu and you 
 
 After getting annoyed with this I did some googling, quickly finding many people with the same issue. In particular this [open issue #44024](https://github.com/Microsoft/vscode/issues/44024) in which it is mentioned that the `Close Folder` action will combine all the files.
 
-<img align="left" src="/assets/screen-shot-2019-06-14-at-12.16.49-pm.png">
-<img align="left" src="/assets/screen-shot-2019-06-14-at-12.17.05-pm.png">
+<img style="float: left; padding:10px" src="/assets/screen-shot-2019-06-14-at-12.16.49-pm.png">  
+<img style="float: left; padding:10px" src="/assets/screen-shot-2019-06-14-at-12.17.05-pm.png">
+<br clear= "both" />
 
 This was much nicer.
 
