@@ -8,8 +8,8 @@ tags:
   - vscode
 layout: post
 draft: false
+description: "A quick tip for when you accidentally make changes to 100's of files in Visual Studio Code and don't want to save them."
 ---
-This is a quick tip for when you accidentally make changes to 100's of files in Visual Studio Code and don't want to save them.
 
 I updated my root folder because it had a typo in it. For some reason every time I type the word `survey` my fingers decide `survery` is what I really need.
 
