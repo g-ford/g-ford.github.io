@@ -24,6 +24,7 @@ collections:
       - { name: tags, label: Tags, widget: list }
       - { name: layout, label: Layout, widget: hidden, default: post }
       - { label: "Draft", name: "draft", widget: "boolean", default: true}
+      - { label: "Summary", name: "description" }
       - { name: body, label: Body, widget: markdown }
 
   - name: pages
