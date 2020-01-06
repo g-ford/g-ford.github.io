@@ -1,15 +1,15 @@
 ---
 title: .Net in a Serverless World
-date: "2019-03-08T22:12:03.284Z"
+path: /posts/dotnet-in-a-serverless-world/
+date: '2019-03-08T22:12:03.284Z'
+category: programming
+tags:
+  - apis
+  - dotnet
+  - serverless
 layout: post
 draft: false
-path: "/posts/dotnet-in-a-serverless-world/"
-category: "programming"
-tags:
-  - "apis"
-  - "dotnet"
-  - serverless
-description: "Using .Net Core no AWS Lambda can be a nice experience."
+description: Using .Net Core on AWS Lambda can be a nice experience.
 ---
 
 Serverless development is becoming a pretty common pattern now-a-days. There are some nice libraries and frameworks popping up and the aptlay named
