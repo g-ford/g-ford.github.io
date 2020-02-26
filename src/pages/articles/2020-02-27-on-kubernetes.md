@@ -6,7 +6,7 @@ category: programming
 tags:
   - kubernetes
 layout: post
-draft: true
+draft: false
 description: Thoughts on messing about with Kuberenetes and the surrounding ecosystem
 ---
 Kubernetes is a beast. 
